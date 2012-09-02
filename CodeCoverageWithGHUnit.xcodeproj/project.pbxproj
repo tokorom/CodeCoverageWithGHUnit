@@ -20,6 +20,8 @@
 		5B5B44F815F349C60046C677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B44F715F349C60046C677 /* main.m */; };
 		5B5B450115F34AB70046C677 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5B450015F34AB70046C677 /* GHUnitIOS.framework */; };
 		5B5B450315F34C940046C677 /* SampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B450215F34C940046C677 /* SampleTest.m */; };
+		5B5B450715F356980046C677 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B450615F356980046C677 /* Sample.m */; };
+		5B5B450815F356980046C677 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B450615F356980046C677 /* Sample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		5B5B44F915F349C60046C677 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		5B5B450015F34AB70046C677 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Tests/Externals/GHUnit/GHUnitIOS.framework; sourceTree = "<group>"; };
 		5B5B450215F34C940046C677 /* SampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTest.m; sourceTree = "<group>"; };
+		5B5B450515F356980046C677 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		5B5B450615F356980046C677 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 		5B5B44D715F3495F0046C677 /* CodeCoverageWithGHUnit */ = {
 			isa = PBXGroup;
 			children = (
+				5B5B450515F356980046C677 /* Sample.h */,
+				5B5B450615F356980046C677 /* Sample.m */,
 				5B5B44E015F3495F0046C677 /* AppDelegate.h */,
 				5B5B44E115F3495F0046C677 /* AppDelegate.m */,
 				5B5B44D815F3495F0046C677 /* Supporting Files */,
@@ -165,6 +171,7 @@
 				5B5B44E815F349C60046C677 /* Sources */,
 				5B5B44E915F349C60046C677 /* Frameworks */,
 				5B5B44EA15F349C60046C677 /* Resources */,
+				5B5B450415F350710046C677 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -220,6 +227,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B5B450415F350710046C677 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Tests/RunTests.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B5B44C915F3495F0046C677 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -227,6 +250,7 @@
 			files = (
 				5B5B44DE15F3495F0046C677 /* main.m in Sources */,
 				5B5B44E215F3495F0046C677 /* AppDelegate.m in Sources */,
+				5B5B450715F356980046C677 /* Sample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +260,7 @@
 			files = (
 				5B5B44F815F349C60046C677 /* main.m in Sources */,
 				5B5B450315F34C940046C677 /* SampleTest.m in Sources */,
+				5B5B450815F356980046C677 /* Sample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +367,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Tests/Externals/GHUnit\"",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
@@ -362,6 +389,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Tests/Externals/GHUnit\"",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";

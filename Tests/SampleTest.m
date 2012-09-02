@@ -6,6 +6,7 @@
 //
 
 #import <GHUnitIOS/GHUnit.h> 
+#import "Sample.h"
 
 @interface SampleTest : GHTestCase
 @end
@@ -14,7 +15,9 @@
 
 - (void)testSample
 {
-  GHAssertEquals( 1, 1, nil );
+  Sample *sample = [Sample new];
+  BOOL bret = [sample graterThanZeroForInt:1];
+  GHAssertTrue(bret, nil);
 }
 
 @end
