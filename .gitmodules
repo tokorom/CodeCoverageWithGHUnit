@@ -1,0 +1,3 @@
+[submodule "Tests/Externals/GHUnit"]
+	path = Tests/Externals/GHUnit
+	url = git://github.com/tokorom/ghunit-ios-framework.git
