@@ -19,6 +19,7 @@
 		5B5B44F615F349C60046C677 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B5B44F415F349C60046C677 /* InfoPlist.strings */; };
 		5B5B44F815F349C60046C677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B44F715F349C60046C677 /* main.m */; };
 		5B5B450115F34AB70046C677 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5B450015F34AB70046C677 /* GHUnitIOS.framework */; };
+		5B5B450315F34C940046C677 /* SampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B450215F34C940046C677 /* SampleTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5B5B44F715F349C60046C677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B5B44F915F349C60046C677 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		5B5B450015F34AB70046C677 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Tests/Externals/GHUnit/GHUnitIOS.framework; sourceTree = "<group>"; };
+		5B5B450215F34C940046C677 /* SampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		5B5B44F115F349C60046C677 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5B5B450215F34C940046C677 /* SampleTest.m */,
 				5B5B44F215F349C60046C677 /* Supporting Files */,
 			);
 			path = Tests;
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5B44F815F349C60046C677 /* main.m in Sources */,
+				5B5B450315F34C940046C677 /* SampleTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
